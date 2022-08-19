@@ -37,6 +37,7 @@ function Get-WKKanji {
                         $mnemonicReading += $_ + ".$(([System.Environment]::Newline))"
                     }
                 }
+                
                 # Level
                 $KanjiLevel = $t.ParsedHtml.body.GetElementsByClassName("level-icon")[0].innerText
 
@@ -65,7 +66,6 @@ function Get-WKKanji {
                 Write-Host "> Meaning: " -f cyan -NoNewline
                     Write-Host $kanjiTitle -f yellow
                     Write-Host "  > Mnemonic: " -f magenta -NoNewLine
-                        # Because the mnemonic is a flat string, it will be converted to multi-line.
                         $mnemonicMeaning
 
                 Write-Host "> Reading: " -f cyan -NoNewline
