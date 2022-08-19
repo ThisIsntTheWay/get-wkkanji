@@ -14,5 +14,4 @@ Pulls the following info:
 
 ![image](https://user-images.githubusercontent.com/13659371/185706472-01b39a41-c261-460d-8a99-9669494e3b65.png)
 
-Information is gathered by scraping the HTML acquired using `Invoke-WebRequest`.  
-Their API is never accessed.
+*Information is gathered by scraping the HTML acquired using `Invoke-WebRequest`.*
